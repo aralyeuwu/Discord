@@ -4,6 +4,7 @@ app = 'omni-parser-app'
 primary_region = 'sin'
 
 [build]
+  image = "python:latest"
 
 [http_service]
   internal_port = 3000
