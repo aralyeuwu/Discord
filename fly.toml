@@ -1,0 +1,10 @@
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+
+app = 'omni-parser-app'
+primary_region = 'sin'
+
+[[vm]]
+  memory = '128gb'
+  cpu_kind = 'performance'
+  cpus = 16
+
