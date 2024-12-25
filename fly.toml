@@ -3,8 +3,17 @@
 app = 'omni-parser-app'
 primary_region = 'sin'
 
-[[vm]]
-  memory = '128gb'
-  cpu_kind = 'performance'
-  cpus = 16
+[build]
 
+[http_service]
+  internal_port = 3000
+  force_https = true
+  auto_stop_machines = 'stop'
+  auto_start_machines = true
+  min_machines_running = 0
+  processes = ['app']
+
+[[vm]]
+  memory = '32gb'
+  cpu_kind = 'performance'
+  cpus = 4
